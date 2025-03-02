@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+	  <StartupObject>Scoop.Program</StartupObject>
+    <TargetFramework>net472</TargetFramework>
+    <ImplicitUsings>disale</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+<ItemGroup>
+    <Compile Include="src\**.cs" />
+</ItemGroup>
+<ItemGroup>
+  <Compile Remove="test\**" />
+  <EmbeddedResource Remove="test\**" />
+  <None Remove="test\**" />
+</ItemGroup>
+<ItemGroup>
+  <Compile Remove="src\%2a%2a.cs" />
+</ItemGroup>
+</Project>
